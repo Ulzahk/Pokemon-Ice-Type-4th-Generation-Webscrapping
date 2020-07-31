@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const pokeWebsite = 'https://pokemondb.net/pokedex/national';
 
-const getDataFromWiki = async () =>{
+const getDataFromPokeWebsite = async () =>{
     try {
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
@@ -34,4 +34,4 @@ const getDataFromWiki = async () =>{
     }
 }
 
-getDataFromWiki()
+getDataFromPokeWebsite()
